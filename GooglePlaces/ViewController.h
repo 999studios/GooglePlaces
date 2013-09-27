@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+#define kGOOGLE_API_KEY @"AIzaSyA_yuW0DQNzUtqg7odJvqxB3Q76yVUDFeU"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
+@interface ViewController : UIViewController<MKMapViewDelegate,CLLocationManagerDelegate>
+{
+     CLLocationManager *locationManager;
+     CLLocationCoordinate2D currentCentre;
+     int currenDist;
+     BOOL firstLaunch;
+}
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+- (IBAction)barButtonPressed:(id)sender;
 
 @end

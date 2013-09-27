@@ -18,6 +18,9 @@
 		A793280317E191C700337857 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A793280217E191C700337857 /* Default-568h@2x.png */; };
 		A793280617E191C700337857 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A793280417E191C700337857 /* MainStoryboard.storyboard */; };
 		A793280917E191C700337857 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A793280817E191C700337857 /* ViewController.m */; };
+		A793281017E192C000337857 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A793280F17E192C000337857 /* MapKit.framework */; };
+		A793281217E192CA00337857 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A793281117E192CA00337857 /* CoreLocation.framework */; };
+		A793281517E19C8E00337857 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A793281417E19C8E00337857 /* MapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		A793280517E191C700337857 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A793280717E191C700337857 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A793280817E191C700337857 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A793280F17E192C000337857 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A793281117E192CA00337857 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A793281317E19C8E00337857 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		A793281417E19C8E00337857 /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A793281217E192CA00337857 /* CoreLocation.framework in Frameworks */,
+				A793281017E192C000337857 /* MapKit.framework in Frameworks */,
 				A79327ED17E191C700337857 /* UIKit.framework in Frameworks */,
 				A79327EF17E191C700337857 /* Foundation.framework in Frameworks */,
 				A79327F117E191C700337857 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +67,7 @@
 			children = (
 				A79327F217E191C700337857 /* GooglePlaces */,
 				A79327EB17E191C700337857 /* Frameworks */,
+				A793280F17E192C000337857 /* MapKit.framework */,
 				A79327EA17E191C700337857 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +83,7 @@
 		A79327EB17E191C700337857 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A793281117E192CA00337857 /* CoreLocation.framework */,
 				A79327EC17E191C700337857 /* UIKit.framework */,
 				A79327EE17E191C700337857 /* Foundation.framework */,
 				A79327F017E191C700337857 /* CoreGraphics.framework */,
@@ -86,6 +97,8 @@
 				A79327FB17E191C700337857 /* AppDelegate.h */,
 				A79327FC17E191C700337857 /* AppDelegate.m */,
 				A793280417E191C700337857 /* MainStoryboard.storyboard */,
+				A793281317E19C8E00337857 /* MapPoint.h */,
+				A793281417E19C8E00337857 /* MapPoint.m */,
 				A793280717E191C700337857 /* ViewController.h */,
 				A793280817E191C700337857 /* ViewController.m */,
 				A79327F317E191C700337857 /* Supporting Files */,
@@ -176,6 +189,7 @@
 				A79327F917E191C700337857 /* main.m in Sources */,
 				A79327FD17E191C700337857 /* AppDelegate.m in Sources */,
 				A793280917E191C700337857 /* ViewController.m in Sources */,
+				A793281517E19C8E00337857 /* MapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
